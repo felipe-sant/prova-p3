@@ -1,20 +1,24 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, Linking, Pressable, Text, View } from 'react-native';
+import s from "./styles/Home.style"
+import Card from './components/Card.component';
+import redirectUrl from './utils/redirectUrl';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+function App() {
+    return (
+        <View style={s.container}>
+            <Text style={s.title}>Tempo Agora!</Text>
+            <View style={s.cards}>
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+            </View>
+            <Pressable style={s.button} onPress={() => redirectUrl("https://www.accuweather.com/pt/br/brazil-weather")}>
+                <Text style={s.buttonText}>Mais informações</Text>
+            </Pressable>
+        </View>
+    );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App
