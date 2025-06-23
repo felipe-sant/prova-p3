@@ -6,8 +6,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
-        rowGap: 20,
-        
+        rowGap: 40,
     },
     title: {
         fontSize: 24,
@@ -27,7 +26,7 @@ const styles = StyleSheet.create({
         rowGap: 30,
     },
     button: {
-        backgroundColor: '#007BFF',
+        backgroundColor: '#000000',
         padding: 10,
         paddingLeft: 20,
         paddingRight: 20,
