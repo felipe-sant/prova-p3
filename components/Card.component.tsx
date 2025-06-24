@@ -35,7 +35,7 @@ export default function Card(props: { tipo: string, dado: DadosClimaticosType })
             setTexto("")
             setImage(require("../assets/undefined.png"))
         }
-    }, [s])
+    })
 
     return (
         <View style={s.container}>

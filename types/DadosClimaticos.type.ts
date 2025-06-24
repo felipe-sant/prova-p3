@@ -1,4 +1,6 @@
 type DadosClimaticosType = {
+    cidade: string;
+    sigla: string;
     temperatura: number;
     umidade: number;
     velocidadeVento: number;
